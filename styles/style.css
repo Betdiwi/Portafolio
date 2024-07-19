@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{ 
+    padding: 0;
+    margin: 0;
+}
+
+
+:root{
+    --color-primario:black;
+    --color-secundario: #f6f6f6;
+    --color-terciario:#28d4fc;
+}
+body{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    /* height: 100vh; que nuestro body ocupe nuestro 100% de nuestra ventana*/
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+
+.header{
+    padding: 2% 0% 0% 15% ;
+    
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link{
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.125rem ;
+    font-weight: 400;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 4% 15%;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.presentacion_contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 60%;
+    text-align: justify
+
+}
+
+.presentacion_saludo{
+    font-size: 1.75rem;
+    /*font-family: 'Krona One', sans-serif;*/
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+}
+
+.presentacion_portafolio{
+    color: var(--color-terciario);
+}
+
+.presentacion_bienvenida{
+    color: var(--color-terciario) ;
+}
+
+.presentacion_nombre{
+    color: var(--color-terciario);
+}
+.Presentacion__texto__Index{
+    font-size:1rem;
+    /*font-family: 'Lato', sans-serif;*/
+    font-family: "Roboto Slab", serif;
+    font-weight:lighter;
+    text-align: justify
+}
+.Presentacion__texto__about{
+    font-size:1rem;
+    /*font-family: 'Lato', sans-serif;*/
+    font-family: "Roboto Slab", serif;
+    font-weight:lighter;
+    text-align: justify
+}
+
+.Presentacion__texto__CV{
+    font-size:1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /*font-family: 'Lato', sans-serif;*/
+    font-family: "Roboto Slab", serif;
+    font-weight:lighter;
+    text-align: justify
+}
+
+.Presentacion__texto__nombre{
+    color: var(--color-terciario);
+}
+
+.presentacion__vinculo__Github{
+    width: 50%;
+    
+    /*El primero es la vertical de l boton y el otro la horizontal*/
+    padding: 15px 0px;/*Distancia de las letras al borde*/
+    color: var(--color-secundario);
+    background-color: var(--color-primario);
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-size:1rem;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentacion__vinculo__Linkedin{
+    width: 50%;
+    
+    /*El primero es la vertical de l boton y el otro la horizontal*/
+    padding: 15px 0px;/*Distancia de las letras al borde*/
+    color: var(--color-secundario);
+    background-color: var(--color-primario);
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-size:1rem;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid var(--color-terciario);
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+/*Este es una clase de un div el cual agrupa los botones para poner posicionarlos*/
+.presentacion__contenido__vinculos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.presentacion__contenido__vinculos__Subtitulo{
+    font-size: 1.5rem;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;/*Determina el estilo dentro del Roboto Mono*/
+}
+
+.presentacion__vinculo__Linkedin:hover{
+    background-color: #272727;
+}
+
+.presentacion__vinculo__Github:hover{
+    background-color: #272727;
+}
+
+.foto{
+    width: 50%;
+   
+    flex-basis: 20rem;
+    flex-grow: 1;
+}
+
+.footer{
+    background-color: var(--color-terciario);
+    padding: 18px;
+    width:100%;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;/*Determina el estilo dentro del Roboto Mono*/
+    font-size: 1.125rem;
+    margin-top: auto;
+}
+
+
+
+
+
+
+.presentacion_contenido__SobreMi{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    text-align: justify
+}
+
+
+.Lista__certificados{
+    text-decoration: none;
+    color: var(--color-terciario);
+}
+
+@media(max-width:830px){
+
+    .header{
+        padding: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    .foto{
+        padding: 0% 0% 0% 0%;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        margin-left: 0%;
+        padding-left: 0%;
+        padding: 0% 0% 10% 0%;
+    }
+    
+    
+}

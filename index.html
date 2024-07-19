@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"><!--habilitar simbolos y que no aparescan como cualquier cosa en la pagina -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- content sirve para que se ajutse a cualquier pantallla -->
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<!--Lo que esta dentro de la ventana-->
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link" href="index.html">Home</a>
+            <a class="header__menu__link" href="about.html">Sobre mí</a>
+            <a class="header__menu__link" href="CV.html">Estudios</a>
+        </nav>
+    </header>
+
+    <main class="presentacion"> <!--Elemento padre , son como "divs" pero con nombres relevantes-->
+
+        <section class="presentacion_contenido">
+
+            <h1 class="presentacion_saludo">¡Hola! Te doy la bienvenida a mi <strong class="presentacion_bienvenida">portafolio.</strong>  </h1>
+            <p class="Presentacion__texto__Index">Mi nombre es <strong class="Presentacion__texto__nombre">Diego Sinche</strong>  ,y soy un apasionado en crear soluciones que integren diseño electrónico y software. </p>
+            
+            <div class="presentacion__contenido__vinculos">
+                <h2 class="presentacion__contenido__vinculos__Subtitulo">Accede a mis redes:</h2>
+                <a class="presentacion__vinculo__Github" href="https://github.com/"><img src="./assets/github.png"> GitHub </a>
+                <a class="presentacion__vinculo__Linkedin" href="https://www.facebook.com/diegojunior.sincheestacio?locale=es_LA"> <img src="./assets/linkedin.png">LinkedIn</a>
+            </div>
+        </section>
+
+        <img  class="foto"  src="./assets/dd_523x512-Photoroom.png" alt="Imagen_Presentacion">
+        
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Diego Sinche</p>
+    </footer>
+    
+</body>
+
+</html>
